@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Challenge Chapter 5, 6, 7</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="lorem">eturn to the fantastical city of San Fransokyo where the affable, inflatable, inimitable healthcare companion robot, Baymax, sets out to do what he was programmed to do: help others.</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_favorite">Favorite</string>
+</resources>

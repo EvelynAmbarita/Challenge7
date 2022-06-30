@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.signup.SignupActivity">
+
+    <ImageView
+        android:id="@+id/ic_signup_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_blue_square_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_signup_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Sign Up"
+        android:textColor="@color/secondary"
+        android:textSize="@dimen/headline_4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_signup_logo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_signiup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_content"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_signup_heading">
+
+        <EditText
+            android:id="@+id/et_signup_nickname"
+            style="@style/forms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_fluent_person_circle_24_regular"
+            android:hint="Name"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_signup_email"
+            style="@style/forms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_fluent_mail_24_regular"
+            android:hint="Email"
+            android:textStyle="bold"
+            android:inputType="textEmailAddress"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_signup_nickname" />
+
+        <EditText
+            android:id="@+id/et_signup_job"
+            style="@style/forms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_fluent_toolbox_24_regular"
+            android:hint="Profession"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_signup_email" />
+
+        <EditText
+            android:id="@+id/et_signup_password"
+            style="@style/forms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_fluent_lock_closed_24_regular"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_signup_job" />
+
+        <EditText
+            android:id="@+id/et_signup_retype_password"
+            style="@style/forms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_fluent_lock_closed_24_regular"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_signup_password" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signup_register"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/purple_500"
+            android:elevation="6dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            app:layout_constraintLeft_toLeftOf="@id/et_signup_retype_password"
+            app:layout_constraintRight_toRightOf="@id/et_signup_retype_password"
+            app:layout_constraintTop_toBottomOf="@id/et_signup_retype_password" />
+
+        <TextView
+            android:id="@+id/tv_signup_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="Already have an account? Sign In"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            app:layout_constraintLeft_toLeftOf="@id/btn_signup_register"
+            app:layout_constraintRight_toRightOf="@id/btn_signup_register"
+            app:layout_constraintTop_toBottomOf="@id/btn_signup_register" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
